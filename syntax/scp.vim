@@ -22,6 +22,7 @@ syn keyword scpCommentTodo     TODO FIXME XXX TBD contained
 
 syn keyword scpInclude         Include
 syn keyword scpType            Package EndPackage
+syn match   scpType            "\<End\s\+Package\>"
 syn keyword scpStatement       Return return
 syn keyword scpStatement       WITH With with ENDWITH EndWith endwith
 syn match   scpStatement       "\<End\s\+With\>"
