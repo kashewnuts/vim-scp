@@ -27,7 +27,7 @@ syn keyword scpStatement       Return return
 syn keyword scpStatement       WITH With with ENDWITH EndWith endwith
 syn match   scpStatement       "\<End\s\+With\>"
 
-syn keyword scpRepeat          WHILE While while WEND Wend wend Wbreak Wcontinue For Next Fbreak Fcontinue
+syn keyword scpRepeat          WHILE While while WEND Wend wend Wbreak Wcontinue For Next Fbreak Fcontinue to step
 syn keyword scpOperator        And and in is not Or or eq
 syn keyword scpException       BEGIN Begin begin CATCH Catch catch
 
