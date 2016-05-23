@@ -15,6 +15,7 @@ setlocal noexpandtab
 setlocal tabstop=4
 setlocal softtabstop=4
 setlocal shiftwidth=4
+
 setlocal fileformat=dos
 setlocal fileencoding=shift_jis
 setlocal suffixesadd& suffixesadd+=.scp
@@ -25,9 +26,9 @@ let b:undo_ftplugin = 'setlocal '.join([
 \   'shiftwidth<',
 \   'softtabstop<',
 \   'tabstop<',
-\   'fileformat',
-\   'fileencoding',
-\   'suffixesadd',
+\   'fileformat<',
+\   'fileencoding<',
+\   'suffixesadd<',
 \ ])
 
 " vim: ts=8
