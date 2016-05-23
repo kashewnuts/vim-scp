@@ -11,12 +11,23 @@ endif
 " Don't load another plugin for this buffer
 let b:did_ftplugin = 1
 
-set noexpandtab
-set tabstop=4
-set softtabstop=4
-set shiftwidth=4
-set fileformat=dos
-set fileencoding=shift_jis
-set suffixesadd& suffixesadd+=.scp
+setlocal noexpandtab
+setlocal tabstop=4
+setlocal softtabstop=4
+setlocal shiftwidth=4
+setlocal fileformat=dos
+setlocal fileencoding=shift_jis
+setlocal suffixesadd& suffixesadd+=.scp
+
+" Imperceptibly prevent the setting is wrong
+let b:undo_ftplugin = 'setlocal '.join([
+\   'expandtab<',
+\   'shiftwidth<',
+\   'softtabstop<',
+\   'tabstop<',
+\   'fileformat',
+\   'fileencoding',
+\   'suffixesadd',
+\ ])
 
 " vim: ts=8
