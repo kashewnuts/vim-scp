@@ -1,8 +1,9 @@
 " Vim syntax file
 " Language:	scp
 " Maintainer:	Kashun Yoshida  <bjzli.m08vo9kqs@gmail.com>
-" Laspt Change:	Feb 24, 2016
+" Last Change:	May 23, 2016
 " Version:	1.0.0
+" License:	This file is placed in the public domain.
 
 if exists("b:current_syntax")
   finish
